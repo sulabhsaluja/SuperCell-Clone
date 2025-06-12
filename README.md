@@ -83,9 +83,6 @@ This project is licensed under the MIT License.
 
 ---
 
-🔗 \[Live Preview Coming Soon]
+🔗 [\[Live Preview]](https://sulabhsaluja.github.io/SuperCell-Clone/supercell.html)
 
-```
 
-Let me know if you'd like help writing the [`main.js` search logic](f), [adding a mobile navbar](f), or [creating a deployment link](f).
-```
