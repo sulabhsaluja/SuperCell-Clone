@@ -47,12 +47,16 @@ Follow these steps to run the project locally:
 SuperCell-Clone/
 │
 ├── supercell.html          # Main page with search bar
-├── clashofclans.html       # Page for Clash of Clans
-├── clashroyale.html        # Page for Clash Royale
+├── coc.html                # Page for Clash of Clans
+├── clash_royale.html       # Page for Clash Royale
+├── login.html              # Page for login
+├── faq.html                # Page for Frequently Asked Questions
 ├── css/
-│   └── style.css           # CSS styles
-├── js/
-│   └── main.js             # JS script for search functionality
+      ├── supercell.css          
+      ├── coc.html                
+      ├── clash_royale.html      
+      ├── login.html             
+      ├── faq.html  
 └── assets/                 # Images and icons
 ````
 
