@@ -83,6 +83,6 @@ This project is licensed under the MIT License.
 
 ---
 
-🔗 \[Live Preview Coming Soon]
+🔗 [\[Live Preview]](https://sulabhsaluja.github.io/SuperCell-Clone/supercell.html)
 
 
