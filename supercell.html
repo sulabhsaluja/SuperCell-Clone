@@ -14,14 +14,14 @@
       src="https://kit.fontawesome.com/1a36b1af9b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="supercell.css" />
+    <link rel="stylesheet" href="./css/supercell.css" />
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
   </head>
   <body class="bg-light">
     <nav class="navbar navbar-expand-lg bg-dark text-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="supercell.html"
-          ><img src="logo.png" alt="" width="63"
+          ><img src="./assets/images/logo.png" alt="" width="63"
         /></a>
         <button
           class="navbar-toggler text-white"
@@ -63,7 +63,7 @@
             </li>
 
             <li class="nav-item" id="one">
-              <a class="nav-link text-light" href="query.html">Login</a>
+              <a class="nav-link text-light" href="login.html">Login</a>
             </li>
             <li class="nav-item dropdown" id="one">
               <a
@@ -96,7 +96,7 @@
           <div id="title">
             <!-- Supercell -->
             <center>
-              <img src="./images/hero image.jpeg" alt="" width="90%" />
+              <img src="./assets/images/hero image.jpeg" alt="" width="90%" />
             </center>
           </div>
         </div>
@@ -118,7 +118,7 @@
             id="game"
           >
             <a href="coc.html">
-              <img src="./images/coc 1.png" alt="" width="95%" height="100%"
+              <img src="./assets/images/coc 1.png" alt="" width="95%" height="100%"
             /></a>
             <h1 class="mt-5 ms-5">Clash of Clans</h1>
           </div>
@@ -129,7 +129,7 @@
           >
             <a href="clash_royale.html"
               ><img
-                src="./images/clash royale.png"
+                src="./assets/images/clash royale.png"
                 alt=""
                 width="95%"
                 height="100%"
@@ -146,34 +146,41 @@
     ></script>
 
     <script>
-  function handleSearch(event) {
-    event.preventDefault(); // Prevent page reload
+      function handleSearch(event) {
+        event.preventDefault(); // Prevent page reload
 
-    const query = document.getElementById('searchInput').value.toLowerCase();
-    const pages = {
-      'clash of clans': 'coc.html',
-      'clash royale': 'clash_royale.html',
-      'faq': 'faq.html',
-      'query': 'query.html',
-      'login': 'main-login.html'
-    };
+        const query = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+        const pages = {
+          "clash of clans": "coc.html",
+          "clash royale": "clash_royale.html",
+          faq: "faq.html",
+          query: "query.html",
+          login: "main-login.html",
+        };
 
-    const matches = Object.keys(pages).filter(name => name.includes(query));
+        const matches = Object.keys(pages).filter((name) =>
+          name.includes(query)
+        );
 
-    if (matches.length === 1) {
-      window.location.href = pages[matches[0]];
-    } else if (matches.length > 1) {
-      const choice = prompt(`Multiple matches found: ${matches.join(', ')}\nType the exact name to open:`).toLowerCase();
-      if (pages[choice]) {
-        window.location.href = pages[choice];
-      } else {
-        alert("Invalid choice.");
+        if (matches.length === 1) {
+          window.location.href = pages[matches[0]];
+        } else if (matches.length > 1) {
+          const choice = prompt(
+            `Multiple matches found: ${matches.join(
+              ", "
+            )}\nType the exact name to open:`
+          ).toLowerCase();
+          if (pages[choice]) {
+            window.location.href = pages[choice];
+          } else {
+            alert("Invalid choice.");
+          }
+        } else {
+          alert("No matching page found.");
+        }
       }
-    } else {
-      alert("No matching page found.");
-    }
-  }
-</script>
-
+    </script>
   </body>
 </html>
